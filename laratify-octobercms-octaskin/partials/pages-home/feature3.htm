@@ -1,0 +1,189 @@
+==
+<style type="text/css">
+    body {
+        background: #000;
+        padding: 0;
+        margin: 0;
+    }
+    .video-responsive {
+        padding-bottom: 50%;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .wrap12 {
+        width: 100%;
+        left: 18%;
+        padding: 15% 2.5% 15%;
+        overflow: hidden;
+        position: absolute; }
+    
+    .diamond12 {
+      display: block;
+      float: left;
+      color: #fff;
+      font-size: 2em;
+      text-decoration: none;
+      background: #5c3e52;
+      margin-left: 72px;
+      margin-top: -53px;
+      width: 4em;
+      height: 4em;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    
+    .thumb {
+      position: relative;
+      overflow: hidden; }
+    
+    .break {
+      clear: left;
+      margin-left: 36px; }
+    
+    .intend {
+      clear: left;
+      margin-left: 322px; }
+    
+    #d_first, #d_second, #d_third, #d_fourth, #d_fifth, #d_sixth, #d_seventh {
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid white;
+    }
+    
+    #d_first, #d_second, #d_third, #d_fourth, #d_fifth, #d_sixth, #d_seventh :hover{
+    cursor: pointer;
+    }
+    
+    #d_third{
+        margin-top: -107px;
+        height: 276px;
+        width: 276px;        
+    }
+    
+    #d_second{
+      margin-left: 87px;  
+    }
+    
+    #d_fourth{
+      margin-top: -32px;
+      margin-left: 112px; 
+    }
+    
+    #d_fifth{
+      margin-left: 87px;
+      margin-top: -32px;
+    }
+    
+    #d_sixth{
+      margin-top: -107px; 
+    }
+    
+    #d_seventh{
+      margin-left: 87px;
+      margin-top: -112px;
+    }
+    
+    @media screen and (max-width: 800px){ 
+        .wrap12{
+            left: 2%;    
+        }
+    }
+    
+    .diamond_img_content{
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg); 
+        top: -20%;
+        left: -15%;
+        background-size: cover;
+        background-position-x: 45%;
+    }
+    
+    #diamond_img_content_1{
+        background-image: url('http://ghouse.kz/storage/app/media/7v6b7612-1.jpg');
+    }
+    
+    #diamond_img_content_2{
+        background-image: url('http://ghouse.kz/storage/app/media/DSC00230.jpg');
+    }
+    
+    #diamond_img_content_3{
+        background-image: url('http://ghouse.kz/storage/app/media/DSC00284.jpg');
+        left: -20%;
+    }
+    
+    #diamond_img_content_4{
+        background-image: url('http://ghouse.kz/storage/app/media/DSC00284.jpg');
+    }
+    
+    #diamond_img_content_5{
+        background-image: url('http://ghouse.kz/storage/app/media/NUR_2929.jpg');
+    }
+    
+    #diamond_img_content_6{
+        background-image: url('http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/rose-flower.jpg');
+    }
+    
+    #diamond_img_content_7{
+        background-image: url('http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/9Tp6z6dbc.jpg');
+    }
+</style>
+
+<div class="video-responsive">
+    
+    <div style="position:absolute; height:100%; width:100%; top: 10%;">
+        <div class="wrap12">
+    		<a class="diamond12 thumb  intend" id="d_first">
+    		    <div id='diamond_img_content_1' class='diamond_img_content'>
+    		    </div>
+    		</a>
+    		<a class="diamond12 thumb dark" id="d_second">
+    		    <div id='diamond_img_content_2' class='diamond_img_content'>
+    		    </div>
+    		</a>
+    		<a class="diamond12 thumb break"  id="d_third">
+    		    <div id='diamond_img_content_3' class='diamond_img_content'>
+    		    </div>
+    		</a>
+    		<a class="diamond12 thumb" id="d_fourth">
+    		    <div id='diamond_img_content_4' class='diamond_img_content'>
+    		    </div>
+    		</a>
+    		<a class="diamond12 thumb dark" id="d_fifth">
+    		    <div id='diamond_img_content_5' class='diamond_img_content'>
+    		    </div>
+    		</a>
+    		<a class="diamond12 thumb intend" id="d_sixth">
+    		    <div id='diamond_img_content_6' class='diamond_img_content'>
+    		    </div>
+    		</a>
+        	<a class="diamond12 thumb dark" id="d_seventh">
+    		    <div id='diamond_img_content_7' class='diamond_img_content'>
+    		    </div>
+        	</a>
+	    </div>
+        <style>
+        #container {
+        margin: 20px;
+        width:1000px;
+        height: 200px;
+        }
+        </style>
+
+
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.diamond12').click(function(){
+        var back_img = $(this).find('.diamond_img_content').css('background-image');
+        $('#diamond_img_content_3').css('background-image',back_img);
+    });
+})
+</script>

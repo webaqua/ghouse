@@ -1,0 +1,68 @@
+==
+<div class="lt-navbar navbar-fixed" style='height:6vh; z-index:99;'>
+  <nav class="lt-no-background">
+    <div class="nav-wrapper">
+      <div class="lt-container container">
+        <a href="{{ 'home'|page }}" class="brand-logo white-text"><img style=" height:40px; margin-top: 13px;" src="http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/logoghouse.png"></img></a>
+        <a href="#" data-activates="mobile-menu" class="lt-mobile-toggle button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+         <li class="{% if this.page.id == 'home' %}active{% endif %}">
+              <div style="height: 25px;">
+              <div style="height: 40px;">
+                  <a href="{{ 'home'|page }}">О компании
+</a>
+              </div>
+            </li>
+        <li class="{% if this.page.id == 'about' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a href="{{ 'about'|page }}">Продукция</a>
+              </div>
+              </li>
+              
+              
+               <li class="{% if this.page.id == 'about' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a href="{{ 'about'|page }}">Технологии</a>
+              </div>
+              </li>
+              
+                 <li class="{% if this.page.id == 'about' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a href="{{ 'about'|page }}">Галерея</a>
+              </div>
+              </li>
+              
+              
+              
+              
+                 <li id='change_style_main2' class="{% if this.page.id == 'about' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a >Фильтр</a>
+              </div>
+              </li>
+              
+                            
+         <li id='change_style_main' class="{% if this.page.id == 'portfolio' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a>Тень</a>
+              </div></li>
+         <li class="{% if this.page.id == 'contact' %}active{% endif %}">
+              <div style="height: 40px;">
+                  <a onclick="openNav()" >Контакты</a>
+              </div></li>
+        </ul>
+        <ul class="side-nav" id="mobile-menu">
+          <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+          <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+          <li class="{% if this.page.id == 'portfolio' %}active{% endif %}"><a href="{{ 'portfolio'|page }}">Portfolio</a></li>
+          <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<script>
+
+
+</script>

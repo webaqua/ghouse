@@ -1,0 +1,147 @@
+title = "Home"
+url = "/"
+layout = "octaskin"
+is_hidden = 0
+==
+<section id="lt-slideshow" class="lt-section lt-section-fullwidth section" style="height: 100vh;">
+  <div class="lt-container container" style="height: 100%">
+    <div class="lt-content lt-slideshow-content" style="height: 100%">
+      {% partial "pages-home/slideshow" %}
+    </div>
+  </div>
+</section>
+
+
+<section id="lt-feature" class="lt-section section" style="height: 100vh; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#127b12+58,ffffff+100 */
+background: rgb(18,123,18); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(18,123,18,1) 58%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#127b12', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+">
+    <div style="height:100%; width:100%; position:absolute;"></div>
+  <div class="lt-container container" style="width:100%; height:100%;">
+    <div class="lt-content lt-feature-content" style="height:100%; padding: 0;">
+      {% partial "pages-home/feature" %}
+    </div>
+  </div>
+</section>
+
+<section id="lt-feature" class="lt-section section" style="height: 100vh; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#127b12+58,ffffff+100 */
+background: rgb(18,123,18); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(18,123,18,1) 58%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#127b12', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+">
+    <div style="height:100%; width:100%; position:absolute;"></div>
+  <div class="lt-container container" style="width:100%; height:100%;">
+    <div class="lt-content lt-feature-content">
+      {% partial "pages-home/feature2" %}
+    </div>
+  </div>
+</section>
+
+<section id="lt-feature" class="lt-section section" style="height: 100vh; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#127b12+58,ffffff+100 */
+background: rgb(18,123,18); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(18,123,18,1) 58%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(18,123,18,1) 58%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#127b12', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+">
+    <div style="height:100%; width:100%; position:absolute;"></div>
+  <div class="lt-container container" style="width:100%; height:100%;">
+    <div class="lt-content lt-feature-content">
+      {% partial "pages-home/feature3" %}
+    </div>
+  </div>
+</section>
+
+
+<style>
+    
+.backblur {
+    filter: url(#wherearemyglasses);
+}
+</style>
+<script>
+$(document).ready(function($) {
+    $('#temp_main').addClass('another_main');
+        $('b').css({'color' : '#e31e24'});
+        $('h3').css({'background-color' : 'transparent', 'box-shadow' : 'none'});
+    /*Бесполезность*/
+    $('#change_style_main').click(function(){
+        if ($('#temp_main').hasClass("another_main")){
+            $('#temp_main').removeClass('another_main');
+            $('b').css({'color' : 'white'});
+            $('h3').css({'background-color' : '#e31e24', 'box-shadow' : '10px 0 0 #e31e24, -10px 0 0 #e31e24'})}
+            else{
+        $('#temp_main').addClass('another_main');
+        $('b').css({'color' : '#e31e24'});
+        $('h3').css({'background-color' : 'transparent', 'box-shadow' : 'none'});}
+    })
+
+    var i = 1;
+
+    $('#change_style_main2').click(function(){
+            i++;
+            if (i % 2 != 0){
+            $('#video').css({'filter':'initial'});}
+            else {$('#video').css({'filter':'url(#video_filter)'}); }
+    })
+    /*                                   dffffff*/
+
+
+
+});
+
+
+</script>
+
+
+
+<!--
+
+Көздеріңді аш
+таныған шығарсың мені Асха как калаш.
+Артыңда алты алаш бл* нешінші этаж
+Пултті басып едім (в шоке болдым)
+Мыналарды тивидан алып атын тасташ баллер мені бас .
+Жанды через двух летровый бас .
+Коп ұзамай артынан сарыагаш .
+Брат жанағы өлеңді тез шығарш .
+Арып алып миымды ашытпаш (за*бал).
+Кара көшелер қараңғы .
+Келіп көріңдер қаламды .
+Алматы өзгертеді адамды .
+Верныйдан ыстық салам бұл
+Кім болсаңда бол.
+Біздің іске араласпа реппен шатастырма ол екі түрлі жол .
+Артыңда жол пол .
+Алдыңда екі каропка оң жағында бес бес ствол.
+Жо жо жоқ .
+Бізде уайым жоқ.
+Бізді бізде оқ .
+Бізде жоспар көп(х4)
+Мать тереза,қолында əуезі.
+Тағдырымен тіресіп.
+Бизнеске ереске
+Артта кірісер ойым бар сенің карьераңа
+Өмірлік стиль, п*даразды манераңа.
+Олар айтат маған репті таста.
+Ал мен тастай алмаймын,тек алға басам.
+Жанымда Асхат,Оның жанында Арман.
+Бұзсаң шырайлы Шымкент пен Алматыдан.
+Ал бізге бəрібір негізі.
+Əркім озіне жауап беру керек.
+Ал бізгі бəрібір негізі.
+Оған Шымкентте туылғанымыз сен.
+Себебтер көп негізі.
+Кешегі жерде, кешкі сегізде.
+Я тағыда килограмм жақсыдан,жасылдан,ғарыштан,братаннын салам.
+Жо жо жок.
+Бізді уайым жоқ.
+Бізді бізде оқ.
+Бізде жоспар көп.(х4)
+
+-->

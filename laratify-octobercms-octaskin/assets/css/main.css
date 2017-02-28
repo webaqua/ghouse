@@ -1,0 +1,460 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    padding: 0;
+    margin: 0;
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    background-color: green;
+}
+
+#preloader_svg {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    fill-opacity: 0;
+    stroke: white;
+    stroke-width: 5px;
+}
+
+.another_main {
+    background-image: none !important;
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+.video-responsive {
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.canvas, .video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #000;
+    z-index: 5;
+}
+
+#over_video {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+    font-size: 12vw;
+    color: #FFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-top: 20%;
+    text-shadow: 4px 4px 4px #5C433B;
+}
+
+#text_over_video {
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    margin-left: 0;
+}
+
+#container_svg {
+    position: absolute;
+    z-index: 90;
+    bottom: 100px;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#slider_menu {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    z-index: 15;
+}
+
+#slider_content {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    z-index: 15;
+}
+
+#wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    padding-right: 2em;
+}
+
+.slider_item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25%;
+    opacity: 0;
+    padding: 10%;
+}
+
+.slider_item_active {
+    opacity: 1;
+}
+
+.menuitem {
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.menuitem_active {
+    font-size: 1.6em;
+    color: #e31e24;
+}
+
+#slider_wrapper {
+    background: url('http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/slider_pattern.png');
+}
+
+#slider_caption {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    margin: 0 auto;
+    transform: translate(0, -50%);
+    max-width: 750px;
+    z-index: 25;
+    overflow: hidden;
+}
+
+
+h3:hover {
+    cursor: default;
+}
+
+h3 {
+    font-size: 4.7em;
+    border-radius: 10px;
+    font-family: 'NeuzeitSLTW01-BookHeavy';
+    font-weight: 300;
+    color: #e31e24;
+    display: inline;
+    background-color: #e31e24;
+    line-height: 122px;
+    max-width: 650px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 10px 0 0 #e31e24, -10px 0 0 #e31e24;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-font-kerning: normal;
+    -moz-font-kerning: normal;
+    font-kerning: normal;
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    padding: 5px 0;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+b {
+    color: white;
+    font-weight: 300;
+}
+
+#another_wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25%;
+    height: 50%;
+    width: 80%;
+}
+
+#logo_gh {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 17%;
+    height: 11%;
+    z-index: 44;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+
+    height: 100%;
+    width: 0;
+    position: absolute;
+    /* Stay in place */
+
+    z-index: 1;
+    /* Sit on top */
+
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+    z-index: 99;
+}
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+
+    width: 100%;
+    /* 100% width */
+
+    text-align: center;
+    /* Cente#e31e24 text/links */
+
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-responsive {
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap {
+    position: absolute;
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px 83px 100px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.diamond {
+  border-radius: 20px;
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  background: #fff;
+  margin-left: 72px;
+  margin-top: -53px;
+  width: 4em;
+  height: 4em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.diamond :hover{
+  cursor: pointer;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden; }
+
+.product_break {
+  clear: left;
+  margin-left: 79px; }
+
+.product_intend {
+  clear: left;
+  margin-left: 171px; }
+
+#product_null{
+    margin-bottom: 25px;
+    margin-left: 264px; }
+
+#product_first {
+  margin-top: -52px; }
+
+#product_second {
+    margin-left: 63px;
+    margin-bottom: 32px; }
+
+#product_third {
+  margin-top: -59px; }
+
+#product_fourth {
+    margin-left: 65px;
+    margin-top: -58px;}
+
+#product_fifth {
+margin-top: -60px;
+margin-left: 64px; }
+
+#product_sixth {
+  margin-top: -29px; }
+
+#product_seventh{
+    margin-top: -27px;
+    margin-left: 65px;
+}
+
+#product_eighth{
+margin-left: -213px;
+margin-top: 65px;
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    margin-top: 261px;
+}
+
+.svg_item{
+    -webkit-transform: rotate(-45deg) scale(1.37);
+    -moz-transform: rotate(-45deg) scale(1.37);
+    transform: rotate(-45deg) scale(1.37);
+}
+
+.active_svg{
+    fill-opacity: 0;
+    stroke: white;
+    stroke-width: 15px;
+    background-color: red;
+}
+
+.non_active_svg{
+    fill-opacity: 1;
+    stroke: transparent;
+}
+
+.svg_overlay{
+    position: absolute;
+    left: 0.5%;
+    top: 7%;
+    transform: scale(1.15);
+}
+
+.modal_div {
+    position: absolute;
+    height: 4em;
+    width: 30em;
+}
+
+#modal_div_5, #modal_div_6, #modal_div_7, #modal_div_8 {
+    width: 25vw !important;
+}
+
+.modal_wrapper h{
+    font-size: 1.6vmax;
+}
+.modal_wrapper p{
+    color:white;
+    font-size: 1vmax;
+}
+.modal_wrapper{
+    position:relative;
+    display:inline-block;
+    z-index:1;
+    color: white;
+}
+
+.rght{
+    text-align: right !important;
+}
+
+.lft{
+    text-align: left !important;
+}
+
+@media (max-width: 1680px) {
+  .over_video {
+    top: 35vh;
+  }
+
+footer {
+  font-size: 12px; }
+
+.no-csstransforms h1 {
+  margin-bottom: 147px; }
+.no-csstransforms .diamond {
+  margin-left: 0;
+  margin-top: 0; }
+.no-csstransforms .intend {
+  margin-left: 197px; }
+.no-csstransforms .break {
+  margin-left: 108px; }
+.no-csstransforms .diamond p {
+  line-height: 178px; }
