@@ -1,1 +1,85 @@
 @import "bourbon"
+$red: #FF0000
+$green: #007100
+$white: #FFFFFF
+
+.menu
+  display: block
+  background-color: $white
+  height: 30px
+
+.row
+  &.container
+    margin-top: em(20px)
+
+.box
+	border: 1px solid black
+	height: 30px
+
+	//&:hover
+	background-color: $red
+
+ .col
+    &.logo
+
+.logo
+  //background-color: $white
+  height: em(140px)
+
+img.logo
+  width: 70%
+  height: auto
+  margin-top: em(35px)
+
+
+.nav_gh
+  padding-top: em(50px)
+  border: 0px solid black
+  padding: 0px
+
+  ul
+    margin: 0
+
+
+  li
+    display: inline-block
+    margin-right: 0px
+    padding: 0px
+    //text-align: center
+    vertical-align: middle
+    line-height: 30px
+    height: 64px
+    width: em(100px)
+    font-size: em(16px)
+
+    color: $white
+    font-weight: bold
+    float: right
+    &:hover
+      background-color: lighten($red, 17%)
+
+    span
+      display: block
+    i
+      font-size: em(23px)
+      margin-top: 6px
+      color: $white
+      line-height: 30px
+
+    a
+      font-size: 18px
+      text-decoration: none
+      color: $white
+      &:visited
+        color: $white
+
+
+  li.current
+    color: $red
+  i.current
+    color: #375e84
+    font-size: 30px
+  a.current
+    color: #375e84
+    &:visited
+      color: #fff
