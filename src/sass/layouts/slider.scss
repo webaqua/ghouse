@@ -23,7 +23,6 @@
   border: $tab-border;
   border-radius: $tab-border-radius;
   margin-bottom: $base-spacing;
-  overflow: hidden;
   margin-top: 30px;
   background: rgba(78,156,78,.1);
   border-radius: 4px;
@@ -145,4 +144,10 @@ h1.act{
       display: none;
     }
   }
+}
+
+.vertical-tabs-container::after{
+  content: '';
+  width: 100%;
+  display: table;
 }

@@ -4,14 +4,19 @@ $black: #141414;
 
 h1{
   font-family: "Roboto", "sans-serif";
-   
+
 }
 
 .container{
   @include outer-container();
   $max-width: 1600px;
   height: 100vh;
+}
 
+.container::after{
+  content: '';
+  width: 100%;
+  display: table;
 }
 
 body{

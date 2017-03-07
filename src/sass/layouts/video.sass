@@ -8,6 +8,11 @@
   overflow: hidden
   z-index: -3
 
+.video-container::after
+  content: ''
+  width: 100%
+  display: table
+
 .video
   width: 100%    !important
   height: auto   !important
@@ -21,6 +26,11 @@
   height: auto
   z-index: -3
   display: block
+
+.video-pattern::after
+  content: ''
+  width: 100%
+  display: table
 
 .video-pattern
   left: 0
