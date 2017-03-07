@@ -69,13 +69,17 @@
   a.vertical-tab-accordion-heading,
   a.vertical-tab {
     color: $dark-gray;
+    font-weight: 100;
   }
 
 h1.act{
-        color: $liteGrin;
-        text-align:right;
+  color: $liteGrin;
+  text-align:right;
+  font-weight: 100;
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  font-family: 'Roboto', sans-serif;
 
-      }
+        }
 
 
   .vertical-tab:focus {

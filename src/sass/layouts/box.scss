@@ -1,0 +1,20 @@
+.box{
+@include span-columns(6);
+
+
+
+@include shift(3);
+border:1px solid red;
+}
+
+.wrap1{
+  display: block;
+  border: 1px solid black;
+}
+
+
+.block{
+  display: block;
+  @include span-columns(4);
+  border: 1px solid black;
+}
