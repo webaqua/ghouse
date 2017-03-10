@@ -1,9 +1,15 @@
+.sub-product-wrap, .sub-cooperation-wrap, .sub-gallery-wrap{
+  display: none;
+  height: auto;
+}
+
 .product_wrap {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
-  height: 70vh;
-  padding: 10em 5em;
+  height: 47em;
+  padding: 10em;
   background: #000;
+  border: 1px solid #fff
 }
 
 .product_wrap::after{
@@ -28,15 +34,17 @@
   -moz-transform: rotate(45deg);
   transform: rotate(45deg); }
 
+/* Product */
+
 .thumb {
   position: relative;
   overflow: hidden; }
 
-.break {
+.product_break {
   clear: left;
   margin-left: 57px; }
 
-.intend {
+.product_intend {
   clear: left;
   margin-left: 154px; }
 
@@ -75,14 +83,197 @@
   margin-top: 70px;
 }
 
-.no-csstransforms h1 {
-  margin-bottom: 147px; }
-.no-csstransforms .diamond {
-  margin-left: 0;
-  margin-top: 0; }
-.no-csstransforms .intend {
-  margin-left: 197px; }
-.no-csstransforms .break {
-  margin-left: 108px; }
-.no-csstransforms .diamond p {
-  line-height: 178px; }
+
+/* Sub Product */
+.indent{
+  margin: 1em;
+}
+
+#sub-product-null, #sub-cooperation-null{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-first, #sub-cooperation-first, #sub-gallery-first{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-second, #sub-cooperation-second, #sub-gallery-second{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-third, #sub-cooperation-third, #sub-gallery-third{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-fourth, #sub-cooperation-fourth, #sub-gallery-fourth{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-fifth, #sub-cooperation-fifth, #sub-gallery-fifth{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-sixth, #sub-cooperation-sixth, #sub-gallery-sixth{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-seventh, #sub-cooperation-seventh, #sub-gallery-seventh{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+#sub-product-eighth, #sub-cooperation-eighth{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #000;
+}
+
+/* Cooperation */
+
+.cooperation_wrap{
+  width: 1000px;
+  margin: 0 auto;
+  height: 40em;
+  padding: 15em 5em;
+  background: #000;
+  border: 1px solid #fff
+}
+
+.little-diamond{
+  border-radius: 8.5px;
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  background: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden; }
+
+.cooperation_break {
+  clear: left;
+  margin-left: 70px; }
+
+.cooperation_intend {
+  clear: left;
+  margin-left: 169px; }
+
+#little_cooperation_first{
+  margin-top: -50px;
+  margin-left: 14px;
+}
+
+#little_cooperation_second{
+  margin-left: 12px;
+  margin-top: -50px;
+}
+
+#little_cooperation_third{
+    margin-left: 10px;
+    margin-top: 28px;
+}
+
+#cooperation_first{
+  margin-bottom: 22px;
+  margin-left: 267px; }
+
+#cooperation_fourth {
+  margin-top: -51px; }
+
+#cooperation_fifth {
+  margin-left: 73px;
+  margin-bottom: 32px; }
+
+#cooperation_sixth{
+  margin-left: 10px;
+}
+
+#cooperation_seventh {
+  margin-top: -61px; }
+
+#cooperation_eighth {
+  margin-left: 72px;
+  margin-top: -64px;}
+
+
+
+/* Gallery */
+
+.gallery_wrap{
+  width: 1000px;
+  margin: 0 auto;
+  height: 30em;
+  padding: 9em 8em;
+  background: #000;
+  border: 1px solid #fff
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden; }
+
+// #first, #second, #third, #fourth, #fifth, #sixth, #seventh {
+//   background: #fff;
+//   border-radius: 20px;
+//   border: 1px solid #000;
+// }
+
+.gallery_break {
+  clear: left;
+  margin-left: 36px; }
+
+.gallery_intend {
+  clear: left;
+  margin-left: 294px; }
+
+#gallery_third{
+  margin-top: -100px;
+  height: 8em;
+  width: 8em;
+}
+
+#gallery_second{
+  margin-left: 78px;
+}
+
+#gallery_fourth{
+  margin-top: -36px;
+  margin-left: 106px;
+}
+
+#gallery_fifth{
+  margin-top: -37px;
+  margin-left: 78px;
+}
+
+#gallery_sixth{
+  margin-top: -100px;
+}
+
+#gallery_seventh{
+  margin-left: 79px;
+  margin-top: -102px;
+}
