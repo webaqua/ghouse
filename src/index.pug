@@ -26,20 +26,18 @@ html(lang='en')
 			article.container
 				include page2.pug
 
+			article.container
+				include page3.pug
+
+			article.container
+				include page4.pug
+
 		.video-container
 			.video-pattern
 				video.forvidos(autoplay loop width="auto")
 					source(src="http://ghouse.kz/storage/app/media/video4.webm" type="video/webm")
 					source(src="video/video2.mp4" type="video/mp4")
 					source(src="video/video2.mp4" type="video/mp4")
-		.container
-			include menu.pug
-			include slider.pug
 
 			a(href="#").scroll_down
 				p scroll down to begin</a>
-
-
-		include page2.pug
-		include page3.pug
-		include page4.pug
