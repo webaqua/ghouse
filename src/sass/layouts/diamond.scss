@@ -8,8 +8,6 @@
   margin: 0 auto;
   height: 47em;
   padding: 10em;
-  background: #000;
-  border: 1px solid #fff
 }
 
 .product_wrap::after{
@@ -147,11 +145,67 @@
 
 .cooperation_wrap{
   width: 1000px;
-  margin: 0 auto;
   height: 40em;
   padding: 15em 5em;
-  background: #000;
-  border: 1px solid #fff
+  margin: 0 25%;
+}
+
+.coop_slider{
+}
+
+.coop_slide{
+  position: absolute;
+  top: 23%;
+  left: 0%;
+  height: 40%;
+  width: 40%;
+  text-align: right;
+}
+
+p1{
+    color: white;
+    font-size: 1em;
+}
+
+h4 {
+   font-size: 2.5em;
+   font-family: 'NeuzeitSLTW01-BookHeavy';
+   font-weight: 300;
+   border-radius: 10px;
+   color: white;
+   display: inline;
+   background-color: #e31e24;
+   line-height: 122px;
+   max-width: 650px;
+   text-transform: uppercase;
+   position: relative;
+   z-index: 3;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   box-shadow: 10px 0 0 #e31e24, -10px 0 0 #e31e24;
+   -webkit-transition: all 0.3s;
+   transition: all 0.3s;
+   -webkit-font-kerning: normal;
+   -moz-font-kerning: normal;
+   font-kerning: normal;
+   -webkit-font-feature-settings: "kern";
+   -moz-font-feature-settings: "kern";
+   font-feature-settings: "kern";
+   padding: 5px 0;
+   -webkit-box-decoration-break: clone;
+   box-decoration-break: clone;
+}
+
+.coop_slide_active{
+    opacity: 1;
+}
+
+.coop_slide_not_active{
+    opacity: 0;
 }
 
 .little-diamond{
@@ -227,8 +281,6 @@
   margin: 0 auto;
   height: 30em;
   padding: 9em 8em;
-  background: #000;
-  border: 1px solid #fff
 }
 
 .thumb {
@@ -277,3 +329,102 @@
   margin-left: 79px;
   margin-top: -102px;
 }
+
+// SVG STYLES
+.svg_item{
+    -webkit-transform: rotate(-45deg) scale(1.37);
+    -moz-transform: rotate(-45deg) scale(1.37);
+    transform: rotate(-45deg) scale(1.37);
+    height: 4em;
+    width: 4em
+}
+
+.active_svg{
+    fill-opacity: 0;
+    stroke: white;
+    stroke-width: 15px;
+    background-color: red;
+}
+
+.non_active_svg{
+    fill-opacity: 1;
+    stroke: transparent;
+}
+
+.diamond_caption{
+    position: absolute;
+    text-align: center;
+    left: 23%;
+    top: 48%;
+    height: 2em;
+    width: 4em;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    line-height: 40%;
+    pointer-events: none;
+}
+
+.diamond_caption h{
+    font-size: 0.5em;
+    font-weight: bold;
+    color: green;
+    letter-spacing: -1px;
+}
+
+.coop_text_wrap{
+  margin-top: 15%;
+}
+
+//DIAMOND gallery
+
+.diamond_img_content{
+       position: absolute;
+       width: 150%;
+       height: 150%;
+       -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+       top: -20%;
+       left: -15%;
+       background-size: cover;
+       background-position-x: 45%;
+       cursor: pointer;
+   }
+
+   #diamond_img_content_1{
+       background-image: url('http://ghouse.kz/storage/app/media/7v6b7612-1.jpg');
+   }
+
+   #diamond_img_content_2{
+       background-image: url('http://ghouse.kz/storage/app/media/DSC00230.jpg');
+   }
+
+   #diamond_img_content_3{
+       background-image: url('http://ghouse.kz/storage/app/media/DSC00284.jpg');
+       left: -20%;
+   }
+
+   #diamond_img_content_4{
+       background-image: url('http://ghouse.kz/storage/app/media/DSC00284.jpg');
+   }
+
+   #diamond_img_content_5{
+       background-image: url('http://ghouse.kz/storage/app/media/NUR_2929.jpg');
+   }
+
+   #diamond_img_content_6{
+       background-image: url('http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/rose-flower.jpg');
+   }
+
+   #diamond_img_content_7{
+       background-image: url('http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/9Tp6z6dbc.jpg');
+   }
+
+
+   .svg_overlay{
+       position: absolute;
+       left: -1.8%;
+       top: 15%;
+       transform: scale(1.15);
+   }

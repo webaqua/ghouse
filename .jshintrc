@@ -1,6 +1,7 @@
 {
-    "undef" : true,
-    "globals" : {
-        "angular" : false
-    }
+		"undef" : true,
+		"globals" : {
+				"angular" : false,
+				"$": false
+		}
 }

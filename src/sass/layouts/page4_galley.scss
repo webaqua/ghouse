@@ -1,0 +1,22 @@
+.gallery_wrapper{
+  position: absolute;
+  height: 60vh;
+  width: 70vw;
+  margin: 0 auto;
+  top: 40%;
+  left: 50%;
+  margin-left: -35vw;
+  margin-top: -30vh;
+  background-color: pink;
+  visibility: hidden;
+}
+
+.gallery_wrapper_background{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+}
