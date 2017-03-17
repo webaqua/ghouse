@@ -1,9 +1,12 @@
-@media only screen and (max-width : 1200px){
+@media only screen and (max-width : 1279px){
   .sub-product-wrap, .sub-cooperation-wrap, .sub-gallery-wrap{
     display: block !important;
   }
-  .product_wrap, .gallery_wrap, .cooperation_wrap{
+  .product_wrap, .gallery_wrap, .cooperation_wrap, .svg_overlay{
     display: none !important;
+  }
+  .coop_margin{
+    margin-top: calc((100vh - 656px) / 2);
   }
 }
 
