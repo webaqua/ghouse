@@ -1,18 +1,94 @@
-.coop_margin{
-  margin-top: calc((100vh - 640px) / 2);
-}
+// .coop_margin{
+//   margin-top: calc((100vh - 640px) / 2);
+// }
 
 .sub-product-wrap, .sub-cooperation-wrap, .sub-gallery-wrap{
-  display: none;
+  display: none !important;
   height: auto;
+  @include span-columns(12);
+}
+
+.sub-product-wrap{
+  margin-top: calc((100vh - 576px) / 2);
+}
+
+.sub-gallery-wrap{
+  margin-top: calc((100vh - 816px) / 2);
+}
+// .sub-cooperation-wrap{
+//   margin-top: calc((100vh - 656px) / 2);
+// }
+
+.sub-product-wrap .left-block{
+    @include span-columns(6);
+}
+
+.sub-product-wrap .right-block{
+  @include span-columns(6);
+}
+
+.sub-cooperation-wrap .left-block{
+  @include span-columns(6);
+}
+
+.sub-cooperation-wrap .right-block{
+  @include span-columns(6);
+}
+
+.sub-gallery-wrap .left-block{
+  @include span-columns(6);
+}
+
+.sub-gallery-wrap .right-block{
+  @include span-columns(6);
+}
+
+.sub-both{
+  @include span-columns(12);
+}
+
+.sub-gallery-wrap .left-block .sub-both{
+  @include span-columns(6);
+  @include shift(3);
+  float: right;
+  margin-right: 0;
+}
+
+// .sub-gallery-wrap .left-block .sub-both:last-child{
+//   margin-right:
+// }
+
+#sub-product-null, #sub-product-first, #sub-product-second, #sub-product-third, #sub-product-fourth, #sub-product-fifth, #sub-product-sixth, #sub-product-seventh{
+  @include span-columns(6);
+}
+
+#sub-cooperation-null, #sub-cooperation-first, #sub-cooperation-second, #sub-cooperation-third, #sub-cooperation-fourth, #sub-cooperation-fifth, #sub-cooperation-sixth, #sub-cooperation-seventh{
+  @include span-columns(6);
+}
+
+.right-block h3, .left-block h3{
+  background: #e31e24;
+  color: #fff;
+  font-size: em(25px);
+  font-weight: 600;
+  margin: 0 0 0.3em;
+  padding-left: 5px;
+}
+
+.right-block p, .left-block p{
+  color: #fff;
+}
+
+.sub-text{
+  @include span-columns(6);
 }
 
 .product_text{
   position: absolute;
-  color: red;
-  left: 25%;
-  top: 25%;
+  right: 2%;
+  bottom: 0;
   text-align: right;
+  opacity: .7;
 }
 
 .text_first{
@@ -155,7 +231,7 @@
 }
 
 
-/* Sub Product */
+/* Sub */
 .indent{
   margin: 1em;
 }
@@ -163,60 +239,75 @@
 #sub-product-null, #sub-cooperation-null{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-first, #sub-cooperation-first, #sub-gallery-first{
+#sub-product-first, #sub-cooperation-first{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-second, #sub-cooperation-second, #sub-gallery-second{
+#sub-product-second, #sub-cooperation-second{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-third, #sub-cooperation-third, #sub-gallery-third{
+#sub-product-third, #sub-cooperation-third{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-fourth, #sub-cooperation-fourth, #sub-gallery-fourth{
+#sub-product-fourth, #sub-cooperation-fourth{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-fifth, #sub-cooperation-fifth, #sub-gallery-fifth{
+#sub-product-fifth, #sub-cooperation-fifth{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-sixth, #sub-cooperation-sixth, #sub-gallery-sixth{
+#sub-product-sixth, #sub-cooperation-sixth{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-seventh, #sub-cooperation-seventh, #sub-gallery-seventh{
+#sub-product-seventh, #sub-cooperation-seventh{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
-#sub-product-eighth, #sub-cooperation-eighth{
+#sub-cooperation-eighth{
   width: 7em;
   height: 7em;
+  background: #fff;
   border: 1px solid #000;
 }
 
+#sub-gallery-first, #sub-gallery-second, #sub-gallery-third, #sub-gallery-fourth, #sub-gallery-fifth, #sub-gallery-sixth, #sub-gallery-seventh,{
+  width: 15em;
+  height: 15em;
+  background: pink;
+}
 /* Cooperation */
 
 .cooperation_wrap{
+  margin-top: calc((100vh - 640px) / 2);
   width: 960px;
   height: 40em;
   padding: 14em 5em;
@@ -225,12 +316,19 @@
   // margin-top: calc((100vh - 640px) / 2);
 }
 
+.product_text h4{
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+  color: #007100;
+  background-color: #fff;
+  // font-weight: 600;
+}
+
 .coop_slider{
 }
 
 .coop_slide{
   position: absolute;
-  top: 18%;
+  top: 30%;
   left: 0;
   height: 40%;
   width: 37%;
