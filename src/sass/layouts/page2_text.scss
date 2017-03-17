@@ -1,0 +1,31 @@
+.modal_div {
+    position: absolute;
+    height: 4em;
+    width: 30em;
+}
+
+#modal_div_5, #modal_div_6, #modal_div_7, #modal_div_8 {
+    width: 25vw !important;
+}
+
+.modal_wrapper h{
+    font-size: 1.6vmax;
+}
+.modal_wrapper p{
+    color:white;
+    font-size: 1vmax;
+}
+.modal_wrapper{
+    position:relative;
+    display:inline-block;
+    z-index:1;
+    color: white;
+}
+
+.rght{
+    text-align: right !important;
+}
+
+.lft{
+    text-align: left !important;
+}

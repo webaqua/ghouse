@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	/* if in tab mode */
 
-	$(".js-vertical-tab").click(function(event) {
+	$(".js-vertical-tab").mouseover(function(event) {
 	event.preventDefault();
 
 	$(".js-vertical-tab-content").hide();
@@ -64,6 +64,14 @@ $(document).ready(function(){
 
 	$(".js-vertical-tab-accordion-heading").removeClass("is-active");
 	$(".js-vertical-tab-accordion-heading[rel^='"+activeTab+"']").addClass("is-active");
+
+
+  $('.forvidos').addClass('backblur');
+	});
+
+  $(".js-vertical-tab").mouseleave(function(event) {
+	event.preventDefault();
+  $('.forvidos').removeClass('backblur');
 	});
 
 	/* if in accordion mode */
@@ -394,7 +402,126 @@ $(document).ready(function(){
 
 
 
-  //Gallery script
+   //Text positioning script
+
+   var pWidth = $('.modal_div').width();
+
+
+   window.setInterval(function(){
+
+            var eTop = $('#svg_null_line').offset().top;
+            var eLeft = $('#svg_null_line').offset().left;
+            $("#modal_div_1").offset({ top: eTop-eTop*0.2, left: eLeft-pWidth-15});
+
+            var eTop = $('#svg_first_line').offset().top;
+            var eLeft = $('#svg_first_line').offset().left;
+            $("#modal_div_2").offset({ top: eTop-eTop*0.16, left: eLeft-pWidth-15});
+
+            var eTop = $('#svg_third_line').offset().top;
+            var eLeft = $('#svg_third_line').offset().left;
+            $("#modal_div_3").offset({ top: eTop-eTop*0.01, left: eLeft-pWidth-15});
+
+            var eTop = $('#svg_sixth_line').offset().top;
+            var eLeft = $('#svg_sixth_line').offset().left;
+            $("#modal_div_4").offset({ top: eTop+eTop*0.01, left: eLeft-pWidth-15});
+
+            var eTop = $('#svg_eighth_line').offset().top;
+            var eLeft = $('#svg_eighth_line').offset().left;
+            $("#modal_div_5").offset({ top: eTop+eTop*0.01, left: eLeft+pWidth/4});
+
+            var eTop = $('#svg_seventh_line').offset().top;
+            var eLeft = $('#svg_seventh_line').offset().left;
+            $("#modal_div_6").offset({ top: eTop-eTop*0.02, left: eLeft+pWidth/4});
+
+            var eTop = $('#svg_fifth_line').offset().top;
+            var eLeft = $('#svg_fifth_line').offset().left;
+            $("#modal_div_7").offset({ top: eTop-eTop*0.09, left: eLeft+pWidth/4});
+
+            var eTop = $('#svg_second_line').offset().top;
+            var eLeft = $('#svg_second_line').offset().left;
+            $("#modal_div_8").offset({ top: eTop-eTop*0.18, left: eLeft+pWidth/4});
+
+        }, 1000);
+
+    //Modal_video script
+
+    $('ul.navigation-menu li:last-child').click(function(){
+ 				$('.modal_video_wrapper').css({'visibility':'visible'});
+        $('.modal_video_wrapper').css({'opacity':'1'});
+ 	 });
+
+   $('.modal_video_wrapper').click(function(e){
+     e.preventDefault;
+       $('.modal_video_wrapper').css({'visibility':'hidden'});
+       $('.modal_video_wrapper').css({'opacity':'0'});
+  });
+
+    //Modal contact form
+
+    var keys = {
+       37: 1,
+       38: 1,
+       39: 1,
+       40: 1
+   };
+
+   function preventDefault(e) {
+       e = e || window.event;
+       if (e.preventDefault)
+           e.preventDefault();
+       e.returnValue = false;
+   }
+
+   function preventDefaultForScrollKeys(e) {
+       if (keys[e.keyCode]) {
+           preventDefault(e);
+           return false;
+       }
+   }
+
+   function disableScroll() {
+       if (window.addEventListener) // older FF
+           window.addEventListener('DOMMouseScroll', preventDefault, false);
+       window.onwheel = preventDefault; // modern standard
+       window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+       window.ontouchmove = preventDefault; // mobile
+       document.onkeydown = preventDefaultForScrollKeys;
+   }
+
+   function enableScroll() {
+       if (window.removeEventListener)
+           window.removeEventListener('DOMMouseScroll', preventDefault, false);
+       window.onmousewheel = document.onmousewheel = null;
+       window.onwheel = null;
+       window.ontouchmove = null;
+       document.onkeydown = null;
+   }
+
+   function openNav() {
+       $(document).scrollTop( $("#video").offset().top );
+       document.getElementById("myNav").style.width = "100%";
+       disableScroll();
+       $('body').addClass('stop-scrolling');
+   }
+
+   /* Close when someone clicks on the "x" symbol inside the overlay */
+   function closeNav() {
+       document.getElementById("myNav").style.width = "0%";
+       enableScroll();
+       $('body').removeClass('stop-scrolling');
+   }
+
+   $("#licontact").click(function() {
+     openNav();
+   });
+
+   $("#closebtn").click(function() {
+     closeNav();
+   });
+
+
+
+    //Gallery script
 
   var gallery
-						})
+});
