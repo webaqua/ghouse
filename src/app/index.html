@@ -14,60 +14,127 @@
     <script src="js/production.min.js" type="text/javascript"></script>
     <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
     <link href="css/jquery.bxslider.css" rel="stylesheet">
-    <script src="js/jquery.onepage-scroll.min.js" type="text/javascript"></script><link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="js/jquery.onepage-scroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.lazyload.min.js" type="text/javascript"></script><link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
   </head>
   <body>
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper"><a class="logo" href="javascript:void(0)"><img src="http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/logoghouse.png" alt="Logo Image"></a><a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)">МЕНЮ</a>
+        <nav role="navigation">
+          <ul class="navigation-menu show" id="js-navigation-menu">
+            <li class="nav-link"><a href="index.html">Главная</a></li>
+            <li class="nav-link"><a href="about.html">О компании</a></li>
+            <li class="nav-link"><a href="products.html">Продукция</a></li>
+            <li class="nav-link"><a href="techs.html">Технологии</a></li>
+            <li class="nav-link"><a href="partnership.html">Сотрудничество</a></li>
+            <li class="nav-link" id="licontact"><a href="javascript:void(0)">Контакты</a></li>
+            <li class="nav-link"><a class="button">
+                <div class="div_btn_cpt">Смотреть презентацию</div>
+                <div class="div_btn_empty"></div>
+                <svg class="svg_icon" viewbox="0 0 50 50">
+                  <path d="M28.9 19.5l-22 11.9C4.2 32.9 1 30.9 1 27.9V4.1c0-3 3.2-5 5.9-3.5l22 11.9c2.8 1.5 2.8 5.5 0 7z"></path>
+                </svg>
+                <p class="tagline tagline--big"></p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="modal_video_wrapper">
+      <iframe id="iframevideo" src="https://player.vimeo.com/video/208614621" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+    <div class="overlay_contact" id="myNav">
+      <!-- Button to close the overlay navigation--><a class="closebtn" id="closebtn" href="javascript:void(0)">×</a>
+      <!-- Overlay content-->
+      <div class="overlay_contact_content">
+        <h>Контакты</h>
+        <p>8 (7187) 74 00 16</p>
+        <p>г.Екибастуз, ул.Королева 74</p>
+      </div>
+    </div>
     <div class="main">
-      <article class="container">
-        <header class="navigation" role="banner">
-          <div class="navigation-wrapper"><a class="logo" href="javascript:void(0)"><img src="http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/logoghouse.png" alt="Logo Image"></a><a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)">МЕНЮ</a>
-            <nav role="navigation">
-              <ul class="navigation-menu show" id="js-navigation-menu">
-                <li class="nav-link"><a href="javascript:void(0)">О компании</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Продукция</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Технологии</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Галерея</a></li>
-                <li class="nav-link"><a href="javascript:void(0)">Контакты</a></li>
-                <li class="nav-link"><a class="button">
-                    <div class="div_btn_cpt">смотреть презентацию</div>
-                    <div class="div_btn_empty"></div>
-                    <svg class="svg_icon" viewbox="0 0 512 512">
-                      <path d="M189,192.303c8.284,0,15-6.717,15-15V132c0-28.673,23.328-52,52-52c28.674,0,52,23.327,52,52v45.303c0,8.283,6.716,15,15,15s15-6.717,15-15V132c0-45.287-36.713-82-82-82s-82,36.713-82,82v45.303C174,185.586,180.716,192.303,189,192.303z M417.416,462H94.584l30.555-281.667h25.993c1.551,19.54,17.937,34.97,37.868,34.97s36.317-15.43,37.868-34.97h58.264c1.551,19.54,17.937,34.97,37.868,34.97s36.317-15.43,37.868-34.97h26.103L417.416,462z"></path>
-                    </svg>
-                    <p class="tagline tagline--big"></p></a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+      <article class="container first_slide">
+        <div class="menu_placeholder"></div>
         <div class="vertical-tabs-container">
-          <div class="vertical-tabs"><a class="js-vertical-tab vertical-tab is-active" href="javascript:void(0)" rel="tab1">Современный тепличный комплекс</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab2">Современный тепличный комплекс</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab3">Современный тепличный</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab4">Современный</a></div>
+          <div class="vertical-tabs"><a class="js-vertical-tab vertical-tab is-active" href="javascript:void(0)" rel="tab1">Green House KZ</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab2">Технологии</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab3">Сотрудники</a><a class="js-vertical-tab vertical-tab" href="javascript:void(0)" rel="tab4">Партнеры</a></div>
           <div class="vertical-tab-content-container"><a class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" href="" rel="tab1">Item 1</a>
             <div class="js-vertical-tab-content vertical-tab-content" id="tab1">
-              <p>
-                <h1 class="act">Современный тепличный комплекс</h1>
-                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</Lorem>
-                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</Lorem>
-                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</Lorem>
-              </p>
+              <p>Современный тепличный комплекс по выращиванию голландских роз сорта Red Naomi.</p>
             </div><a class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" href="" rel="tab2">Item 2</a>
             <div class="js-vertical-tab-content vertical-tab-content" id="tab2">
-              <h1 class="act">Современный тепличный комплекс</h1>
-              <Lorem>ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</Lorem>
+              <p>Использование передовых технологий при строительстве комплекса и при выращивании роз.</p>
             </div><a class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" href="" rel="tab3">Item 3</a>
             <div class="js-vertical-tab-content vertical-tab-content" id="tab3">
-              <h1 class="act">Современный тепличный комплекс</h1>
-              <Lorem>ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</Lorem>
+              <p>В нашем тепличном комплексе трудятся высококвалифицированные агрономы со всего мира.</p>
             </div><a class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" href="" rel="tab4">Item 4</a>
             <div class="js-vertical-tab-content vertical-tab-content" id="tab4">
-              <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p>
+              <p>Нашими партнерами являются надежные компании Казахстана, ближнего и дальнего зарубежья.</p>
             </div>
           </div>
-        </div><a class="scroll_down" href="#">
-          <p>scroll down to begin</a></p></a>
+        </div>
+        <svg height="0">
+          <defs>
+            <filter id="wherearemyglasses" x="0" y="0">
+              <fegaussianblur in="SourceGraphic" stddeviation="10"></fegaussianblur>
+            </filter>
+          </defs>
+        </svg>
+        <div class="scroll_down">
+          <svg viewBox="0 0 35 30">
+            <path d="M16 25c-.512 0-1.024-.195-1.414-.586l-14-14c-.78-.78-.78-2.047 0-2.828.78-.78 2.048-.78 2.828 0L16 20.172 28.586 7.586c.78-.78 2.047-.78 2.828 0 .78.78.78 2.047 0 2.828l-14 14c-.39.39-.902.586-1.414.586z"></path>
+          </svg>
+        </div>
       </article>
-      <article class="container">
+      <article class="container second_slide">
+        <div class="modal_div" id="modal_div_1" style="text-align: right;">
+          <div class="modal_wrapper rght" id="modal_wrapper_1">
+            <h>Красота</h>
+            <p>Идеальный красный цвет с бархатным оттенком</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_2" style="text-align: right;">
+          <div class="modal_wrapper rght" id="modal_wrapper_2">
+            <h>Стойкость</h>
+            <p>Длительное время сохранения свежести, до 14 дней</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_3" style="text-align: right;">
+          <div class="modal_wrapper rght" id="modal_wrapper_3">
+            <h>Объем</h>
+            <p>Соцветие до 80 лепестков</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_4" style="text-align: right;">
+          <div class="modal_wrapper rght" id="modal_wrapper_4">
+            <h>Транспортабельность</h>
+            <p>Превосходная транспортабельность</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_5">
+          <div class="modal_wrapper" id="modal_wrapper_5">
+            <h>Аромат </h>
+            <p>Тонкий приятный аромат</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_6">
+          <div class="modal_wrapper" id="modal_wrapper_6">
+            <h>Натуральность</h>
+            <p>Выращивается только на органических удобрениях</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_7">
+          <div class="modal_wrapper" id="modal_wrapper_7">
+            <h>Популярность</h>
+            <p>Red Naomi - лидер среди красных роз</p>
+          </div>
+        </div>
+        <div class="modal_div" id="modal_div_8">
+          <div class="modal_wrapper" id="modal_wrapper_8">
+            <h>Уникальность</h>
+            <p>Единственный сорт красных срезочных роз,<br> которые источают аромат</p>
+          </div>
+        </div>
         <svg class="svg_overlay" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd;" viewbox="0 0 1626 603" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Слой_x0020_1">
             <metadata id="CorelCorpID_0Corel-Layer"></metadata>
@@ -305,7 +372,7 @@
       </article>
       <article class="container coop_margin">
         <div class="product_text">
-          <h4>Технологии</h4>
+          <h4>Сотрудничество</h4>
         </div>
         <div class="cooperation_wrap">
           <div class="coop_slider">
@@ -573,6 +640,9 @@
         <div class="gallery_wrap"><a class="diamond thumb gallery_intend diamond_gallery" id="gallery_first">
             <div class="diamond_img_content" id="diamond_img_content_1"></div></a><a class="diamond thumb diamond_gallery" id="gallery_second">
             <div class="diamond_img_content" id="diamond_img_content_2"></div></a><a class="diamond thumb gallery_break diamond_gallery" id="gallery_third">
+            <svg id="svg_mg" viewBox="-55 0 135 30">
+              <path d="M31.12 26.878l-5.98-5.983c-.926-.924-2.302-1.12-3.417-.586l-2.268-2.27c3.605-4.32 3.383-10.76-.676-14.816-4.296-4.296-11.26-4.296-15.557 0-4.296 4.296-4.296 11.26 0 15.555 4.057 4.058 10.495 4.282 14.817.68l2.27 2.267c-.532 1.113-.337 2.487.585 3.41l5.984 5.984c1.17 1.172 3.07 1.172 4.24 0 1.173-1.17 1.173-3.07 0-4.242zm-13.757-9.515c-3.514 3.516-9.213 3.516-12.73 0-3.513-3.514-3.513-9.213 0-12.73 3.515-3.514 9.214-3.514 12.73 0 3.516 3.517 3.516 9.217 0 12.73zm13.05 13.05c-.78.78-2.047.78-2.827 0l-5.984-5.983c-.775-.78-.775-2.048 0-2.828.78-.775 2.05-.78 2.828 0l5.984 5.984c.78.78.78 2.048 0 2.828z"></path>
+            </svg>
             <div class="diamond_img_content" id="diamond_img_content_3"></div></a><a class="diamond thumb diamond_gallery" id="gallery_fourth">
             <div class="diamond_img_content" id="diamond_img_content_4"></div></a><a class="diamond thumb diamond_gallery" id="gallery_fifth">
             <div class="diamond_img_content" id="diamond_img_content_5"></div></a><a class="diamond thumb gallery_intend diamond_gallery" id="gallery_sixth">
@@ -608,9 +678,16 @@
             <div class="carousel-container">
               <div class="arrow left-arrow"><i class="fa fa-arrow-circle-left fa-3x"></i></div>
               <ul class="carousel">
-                <li><img src="https://s3.amazonaws.com/dauersampleimages/nature1.jpg"></li>
-                <li><img src="https://s3.amazonaws.com/dauersampleimages/nature2.jpg"></li>
-                <li><img src="https://s3.amazonaws.com/dauersampleimages/nature3.jpg"></li>
+                <li><img id="limg_1" src="img/techs_img (1).jpg"></li>
+                <li><img class="lazy" id="limg_2" src="img/techs_img (2).jpg"></li>
+                <li><img class="lazy" id="limg_3" src="img/techs_img (3).jpg"></li>
+                <li><img class="lazy" id="limg_4" src="img/techs_img (4).jpg"></li>
+                <li><img class="lazy" id="limg_5" src="img/techs_img (5).jpg"></li>
+                <li><img class="lazy" id="limg_6" src="img/techs_img (6).jpg"></li>
+                <li><img class="lazy" id="limg_7" src="img/techs_img (7).jpg"></li>
+                <li><img class="lazy" id="limg_8" src="img/techs_img (8).jpg"></li>
+                <li><img class="lazy" id="limg_9" src="img/techs_img (9).jpg"></li>
+                <li><img class="lazy" id="limg_10" src="img/techs_img (10).jpg"></li>
               </ul>
               <div class="arrow right-arrow"><i class="fa fa-arrow-circle-right fa-3x"></i></div>
             </div>
@@ -623,74 +700,74 @@
           <ul class="bxslider">
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
             <li>
               <div class="partners-row">
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
-                <div class="partners-col"><img src="http://lorempixel.com/360/200/"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
+                <div class="partners-col"><img class="imgbw" src="img/partner1.png"></div>
               </div>
             </li>
           </ul>
@@ -702,20 +779,16 @@
         </div>
       </article>
     </div>
-    <div class="video-container">
+    <div class="video-container" id="video">
       <div class="video-pattern">
         <video class="forvidos" autoplay loop width="auto">
           <source src="http://ghouse.kz/storage/app/media/video4.webm" type="video/webm">
-          <source src="video/video2.mp4" type="video/mp4">
-          <source src="video/video2.mp4" type="video/mp4">
         </video>
-      </div><a class="scroll_down" href="#">
-        <p>scroll down to begin</a></p>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
           var bittersMap = (function () {
-          var myLatlng = new google.maps.LatLng(51.128422, 71.430564),
-          mapCenter = new google.maps.LatLng(51.128422, 71.430564),
+          var myLatlng = new google.maps.LatLng(51.720089, 75.285904),
+          mapCenter = new google.maps.LatLng(51.720089, 75.285904),
           mapCanvas = document.getElementById('map_canvas'),
           mapOptions = {
           center: mapCenter,
@@ -762,7 +835,8 @@
           };
           }());
           bittersMap.init();
-        </script></a>
+        </script>
+      </div>
     </div>
   </body>
 </html>

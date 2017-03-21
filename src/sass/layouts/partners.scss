@@ -18,3 +18,11 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.imgbw {
+  filter: grayscale(100%);
+}
+
+.imgbw:hover{
+  filter: grayscale(0%);
+}

@@ -2,6 +2,8 @@
     position: absolute;
     height: 4em;
     width: 30em;
+    transition: all 0.3s ease-out;
+    opacity: 0;
 }
 
 #modal_div_5, #modal_div_6, #modal_div_7, #modal_div_8 {

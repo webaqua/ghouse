@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <title>Gulp/Bourbon/Neat/Bitters Starter</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/onepage-scroll.css" rel="stylesheet">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/production.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <script src="js/jquery.onepage-scroll.min.js" type="text/javascript"></script><link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+  </head>
+  <body>
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper"><a class="logo" href="javascript:void(0)"><img src="http://ghouse.kz/themes/laratify-octobercms-octaskin/assets/images/logoghouse.png" alt="Logo Image"></a><a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)">МЕНЮ</a>
+        <nav role="navigation">
+          <ul class="navigation-menu show" id="js-navigation-menu">
+            <li class="nav-link"><a href="index.html">Главная</a></li>
+            <li class="nav-link"><a href="about.html">О компании</a></li>
+            <li class="nav-link"><a href="products.html">Продукция</a></li>
+            <li class="nav-link"><a href="techs.html">Технологии</a></li>
+            <li class="nav-link"><a href="partnership.html">Сотрудничество</a></li>
+            <li class="nav-link" id="licontact"><a href="javascript:void(0)">Контакты</a></li>
+            <li class="nav-link"><a class="button">
+                <div class="div_btn_cpt">Смотреть презентацию</div>
+                <div class="div_btn_empty"></div>
+                <svg class="svg_icon" viewbox="0 0 50 50">
+                  <path d="M28.9 19.5l-22 11.9C4.2 32.9 1 30.9 1 27.9V4.1c0-3 3.2-5 5.9-3.5l22 11.9c2.8 1.5 2.8 5.5 0 7z"></path>
+                </svg>
+                <p class="tagline tagline--big"></p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="modal_video_wrapper">
+      <iframe id="iframevideo" src="https://player.vimeo.com/video/208614621" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+    <div class="overlay_contact" id="myNav">
+      <!-- Button to close the overlay navigation--><a class="closebtn" id="closebtn" href="javascript:void(0)">×</a>
+      <!-- Overlay content-->
+      <div class="overlay_contact_content">
+        <h>Контакты</h>
+        <p>8 (7187) 74 00 16</p>
+        <p>г.Екибастуз, ул.Королева 74</p>
+      </div>
+    </div>
+    <div class="main">
+      <article class="container">
+        <div class="menu_placeholder"></div>
+        <div class="text_container">
+          <p>Мы приглашаем к сотруднечиству и предлагаем выгодные условия:</p><br>
+          <p>
+             • Гарантия качества Наш подход к производству и передовые технологии, гарантируют высокое качество продукции</p>
+          <p>•	Выгодные цены Наши цены выгодно отличают нас от конкурентов</p>
+          <p>•	Высокий спрос Самый популярный сорт красных роз</p>
+          <p>•	Стабильность Стабильные поставки круглый год</p>
+          <p>•	Без посредников Работа напрямую с производителем/Вы будете работать напрямую с производителем.</p>
+          <p>•	Доставка Доставку осуществляем надежными транспортными компаниями, в любой регион Казахстана, ближнего и дальнего зарубежья.</p>
+          <p>•	Поддержка Информационная и рекламная поддержка</p>
+          <p>•	Внимание Индивидуальный и ответственный подход к каждому клиенту</p><br>
+          <p>Нашими партнерами являются надежные компании Казахстана, ближнего и дальнего зарубежья.</p>
+        </div>
+      </article>
+    </div>
+    <div class="video-container" id="video">
+      <div class="video-pattern">
+        <video class="forvidos" autoplay loop width="auto">
+          <source src="img/video2.webm" type="video/webm">
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

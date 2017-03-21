@@ -20,3 +20,19 @@
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
 }
+
+#svg_mg{
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  transform: rotate(-45deg);
+  fill: rgba(255, 255, 255, 0.68);
+  z-index: 11;
+  pointer-events: none;
+}
+
+#gallery_third:hover #svg_mg{
+  fill: white;
+  transform: scale(1.2) rotate(-45deg);
+  transition: all .3s ease;
+}

@@ -27,7 +27,7 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  background: #fff;
+  background: transparent;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {

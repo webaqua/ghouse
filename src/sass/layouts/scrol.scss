@@ -40,6 +40,8 @@ $line-height: $text-size + $circle-thickness;
 
 
 .scroll_down{
+  height: 60px;
+  width: 60px;
   font-size: $text-size;
   line-height: $line-height;
   margin:auto;
@@ -53,32 +55,20 @@ $line-height: $text-size + $circle-thickness;
   @extend %transition;
   @extend %animation;
 
-  &:after{
-    @extend %transition;
-    content: "";
-    width:0;
-    height:0;
-    border: $arrow-width solid transparent;
-    border-top: $arrow-width solid $arrow-color;
-    display:block;
-    position: absolute;
-    left: 50%;
-    top:-1 * (($circle-thickness * 2) + ($arrow-width * 2) + $text-offset);
-    margin-left: -1 * $arrow-width;
-  }
-  &:before{
-    @extend %transition;
-    position: absolute;
-    left: 50%;
-    margin-left: -1 * ($circle-radius + $circle-thickness);
-    top:-1 * (($circle-radius * 2) + ($circle-thickness) + $text-offset);
-    display:block;
-    content: "";
-    border: $circle-thickness $circle-style $circle-color;
-    border-radius: 50%;
-    width: $circle-radius * 2;
-    height: $circle-radius *2;
-  }
+
+  // &:before{
+  //   @extend %transition;
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -1 * ($circle-radius + $circle-thickness);
+  //   top:-1 * (($circle-radius * 2) + ($circle-thickness) + $text-offset);
+  //   display:block;
+  //   content: "";
+  //   border: $circle-thickness $circle-style $circle-color;
+  //   border-radius: 50%;
+  //   width: $circle-radius * 2;
+  //   height: $circle-radius *2;
+  // }
   &:hover{
     color: $hover-color;
     @include animation-name(none);
@@ -101,4 +91,8 @@ $line-height: $text-size + $circle-thickness;
   100%{
     opacity: 1;
   }
+}
+
+.scroll_down svg{
+  fill: #4e9c4e;
 }

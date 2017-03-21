@@ -28,7 +28,7 @@ header.navigation {
   z-index: 995;
   padding: 12px;
   position: fixed;
-
+  transition: all 0.3s ease-out;
 
   .navigation-wrapper {
     @include clearfix;
@@ -383,10 +383,10 @@ display: block;
 .svg_icon {
   display: inline-block;
   $icon: 1.1em;
-  fill: white;
+  fill: #4e9c4e;
   position: relative;
   vertical-align: bottom;
-  top: -0.1em;
+  top: -0.01em;
   left: 0;
   width: $icon;
   height: $icon;
