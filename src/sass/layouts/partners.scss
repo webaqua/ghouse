@@ -4,8 +4,8 @@
 }
 
 .partners-col{
-  @include span-columns(3);
-  height: 200px;
+  @include span-columns(2);
+  height: 7em;
   position: relative;
 
   img {

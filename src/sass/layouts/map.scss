@@ -1,7 +1,7 @@
 #map_canvas {
-  height: 400px;
+  height: 50vh;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 5em;
 }
 
 #map_canvas img {
@@ -26,5 +26,13 @@
 }
 
 .footer_margin{
-  margin-top: calc((100vh - 704px) / 2);
+  text-align: center;
+}
+
+.footer_margin h4{
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+  color: #007100;
+  background-color: #fff;
+  text-align: center;
+  opacity: .7;
 }

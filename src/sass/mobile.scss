@@ -1,0 +1,22 @@
+.mobile-product-wrap, .mobile-cooperation-wrap{
+  display: none;
+}
+
+.mobile-product-wrap{
+  margin-top: calc((100vh - 360px) / 2);
+}
+.mobile-cooperation-wrap{
+  margin-top: calc((100vh - 360px) / 2);
+}
+
+.mobile_svg_item{
+  margin-bottom: calc((360px - 287px) / 2);
+  height: 80%;
+  width: 50%;
+  transform: none;
+}
+
+.mobile_text{
+  float: right;
+  width: 45%;
+}
