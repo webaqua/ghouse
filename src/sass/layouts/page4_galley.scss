@@ -36,3 +36,11 @@
   transform: scale(1.2) rotate(-45deg);
   transition: all .3s ease;
 }
+
+.gallery_caption{
+    transform: rotate(-45deg);
+    font-size: 0.7vmin;
+    display: inline-block;
+    padding-top: 48%;
+    padding-left: 28%;
+}

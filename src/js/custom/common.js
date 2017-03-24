@@ -926,4 +926,38 @@ $(document).ready(function() {
     prevSlide(1000);
   });
 
+
+  console.log(window.location.href);
+
+  if(window.location.href != 'http://localhost:3000/index.html'){
+    $('ul.navigation-menu li:last-child').css({'display':'none'});
+    $('.navigation').css({'position':'relative'});
+    el = $(this);
+    $("body").addClass("disabled-onepage-scroll");
+    $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
+    el.swipeEvents().unbind("swipeDown swipeUp");
+  } else {
+    $('ul.navigation-menu li:last-child').css({'display':'inherit'});
+    $('.navigation').css({'position':'fixed'});
+    if($("body").hasClass("disabled-onepage-scroll")) {
+      $("body").removeClass("disabled-onepage-scroll");
+      $("html, body, .wrapper").animate({ scrollTop: 0 }, "fast");
+    }
+
+
+    el.swipeEvents().bind("swipeDown",  function(event){
+      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      el.moveUp();
+    }).bind("swipeUp", function(event){
+      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      el.moveDown();
+    });
+
+    $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+      event.preventDefault();
+      var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+      init_scroll(event, delta);
+    });
+  }
+
 });
