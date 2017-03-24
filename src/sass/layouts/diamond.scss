@@ -21,7 +21,7 @@
 // }
 
 .sub-gallery-wrap{
-  margin-top: calc((100vh - 460px) / 2);
+  margin-top: calc((100vh - 576px) / 2);
 }
 // .sub-cooperation-wrap{
 //   margin-top: calc((100vh - 656px) / 2);
@@ -84,7 +84,7 @@
 .right-block h3, .left-block h3{
   background: #e31e24;
   color: #fff;
-  font-size: em(25px);
+  font-size: 3vmin;
   font-weight: 600;
   margin: 0 0 0.3em;
   padding-left: 5px;
@@ -108,7 +108,7 @@
 }
 
 .product_wrap {
-  margin-top: calc((100vh - 700px) / 2);
+  margin-top: calc((100vh - 843px) / 2);
   width: 1000px;
   margin-left: auto;
   margin-right: auto;

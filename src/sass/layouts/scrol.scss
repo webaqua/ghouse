@@ -46,14 +46,17 @@ $line-height: $text-size + $circle-thickness;
   line-height: $line-height;
   margin:auto;
   display: block;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
   text-align: center;
   text-decoration: none;
   color: $text-color;
   text-decoration: none;
-  top:$circle-radius * 2 + $circle-thickness * 2 + $text-offset + $line-height;
+  // top:$circle-radius * 2 + $circle-thickness * 2 + $text-offset + $line-height;
   @extend %transition;
   @extend %animation;
+  // margin: calc((40vh - 60px) / 2) auto;
 
 
   // &:before{

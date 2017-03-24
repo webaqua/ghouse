@@ -34,11 +34,17 @@
   }
 }
 
-@media only screen and (max-width: 1199px){
-  .navigation-menu-button{
-    display: inline !important;
+@media only screen and (max-width: 1200px){
+  // .navigation-menu-button{
+  //   display: inline !important;
+  // }
+  // .navigation-menu{
+  //   display: none !important;
+  // }
+  header.navigation ul li.nav-link:last-child{
+    display: block !important;
   }
-  .navigation-menu{
+  .menu_placeholder{
     display: none !important;
   }
 }
@@ -51,6 +57,9 @@
   }
   .svg_icon{
     top: -0.6em !important;
+  }
+  .scroll_down{
+    display: none !important;
   }
 }
 /* Small Devices, Tablets */
@@ -66,9 +75,6 @@
   }
   .partners-col img{
     height: 60% !important;
-  }
-  .scroll_down{
-    display: none !important;
   }
 
   .vertical-tab-content p{

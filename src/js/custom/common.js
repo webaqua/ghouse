@@ -937,7 +937,7 @@ $(document).ready(function() {
     $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
     el.swipeEvents().unbind("swipeDown swipeUp");
   } else {
-    $('ul.navigation-menu li:last-child').css({'display':'inherit'});
+    $('ul.navigation-menu li:last-child').css({'display':'inline'});
     $('.navigation').css({'position':'fixed'});
     if($("body").hasClass("disabled-onepage-scroll")) {
       $("body").removeClass("disabled-onepage-scroll");
