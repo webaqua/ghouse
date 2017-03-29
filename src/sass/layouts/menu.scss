@@ -34,7 +34,6 @@ header.navigation {
     @include clearfix;
     position: relative;
     z-index: 9999;
-
   }
 
   .logo {
@@ -61,6 +60,25 @@ header.navigation {
     padding-right: 1em;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+
+    span.buter {
+      width: 25px;
+      height: 25px;
+      display: block;
+      margin-left: 10px;
+      float: right;
+      span {
+        background: #fff;
+        display: block;
+        width: 100%;
+        height: 20%;
+        margin-top: 20%;
+      }
+      span:first-of-type {
+        margin-top: 0;
+      }
+    }
 
     @include media ($horizontal-bar-mode) {
       display: none;
